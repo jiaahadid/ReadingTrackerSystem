@@ -1,0 +1,187 @@
+/* 🌸 General body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff0f5; /* light pink background */
+  color: #333;
+  padding: 20px;
+}
+
+/* 🌸 Title */
+h1 {
+  text-align: center;
+  color: #ff3399; /* bright pink */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ffb3d9;
+}
+
+/* 🌸 Inputs and buttons */
+input, button, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ffb3d9;
+  padding: 8px;
+  margin: 4px 0;
+  transition: 0.2s;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+#filterInput {
+  width: 250px;
+}
+
+/* 🌸 Buttons */
+button {
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff99cc, #ff66aa); /* fun gradient */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff66aa, #ff3399);
+  transform: scale(1.05);
+}
+
+/* 🌸 Book container */
+#bookList, #searchResults {
+  margin-top: 20px;
+}
+
+/* 🌸 Book cards */
+.book {
+  background: #fff8fb; /* very light pink */
+  border: 2px solid #ffb3d9;
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+/* 🌸 Read books style */
+.book.read {
+  background: #ffe6f0;
+  border-color: #ff3399;
+}
+
+/* 🌸 Actions buttons spacing */
+.actions button {
+  margin-right: 6px;
+  margin-top: 6px;
+}
+
+/* 🌸 Summary styling */
+.summary-text {
+  display: block;
+  margin-top: 6px;
+  padding: 6px;
+  background: #ffe6f8; /* soft pastel pink */
+  border-radius: 6px;
+  color: #333;
+  font-style: italic;
+}
+
+textarea.summary-input {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 6px;
+  border: 1px solid #ffb3d9;
+  border-radius: 10px;
+  padding: 6px;
+  resize: vertical;
+  background: #fff0f5; /* typing area soft pink */
+  color: #333;
+}
+
+/* 🌸 Search results books */
+#searchResults .book {
+  background: #fff0f8;
+  border-color: #ff99cc;
+}
+
+/* 🌸 Hover effect for book containers */
+.book:hover {
+  box-shadow: 0 4px 10px rgba(255, 51, 153, 0.3);
+  transition: 0.2s;
+}
+
+/* 🌸 Optional: highlight new books */
+.book.new {
+  border-color: #ffcc99;
+  background: #fffaf0;
+}
+
+/* 🌸 Focus effect for inputs */
+input:focus, textarea:focus {
+  border-color: #ff66aa;
+  outline: none;
+  box-shadow: 0 0 5px #ff99cc;
+}
+
+/* 🌸 Navigation button styling */
+.nav-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.nav-btn {
+  background: linear-gradient(135deg, #ffb3d9, #ff66aa);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(135deg, #ff66aa, #ff3399);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 51, 153, 0.3);
+}
+
+/* 🌸 Layout for reading list tools */
+.list-tools {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-tools input {
+  width: 250px;
+  margin-right: 10px;
+}
+
+/* 🌸 In-app popup */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 51, 153, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: #fff8fb;
+  border: 2px solid #ff66aa;
+  border-radius: 16px;
+  padding: 24px 32px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(255, 51, 153, 0.35);
+}
+
+.popup-box p {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff3399;
+}

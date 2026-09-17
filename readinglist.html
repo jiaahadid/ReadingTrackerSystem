@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>📚 My Reading List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>📚 My Reading List</h1>
+
+    <div class="nav-container">
+      <button class="nav-btn" onclick="window.location.href='index.html'">⬅️ Back to Search</button>
+    </div>
+
+    <div class="list-tools">
+      <input type="text" id="filterInput" placeholder="Search in reading list...">
+      <button id="clearAll">🧹 Clear All</button>
+    </div>
+
+    <div id="bookList"></div>
+
+    <script src="renderer.js"></script>
+    <script>
+      // 🔹 Load and render books when readinglist.html is opened
+      document.addEventListener('DOMContentLoaded', () => {
+        if (typeof renderMyBooks === 'function') {
+          renderMyBooks();
+        } else {
+          console.error('renderMyBooks function not found');
+        }
+      });
+    </script>
+  </body>
+</html>
